@@ -5,6 +5,9 @@ on:
       - master # or the name of your main branch
   pull_request:
     types: [opened, synchronize, reopened]
+
+permissions: read-all
+
 jobs:
   build:
     name: Build
