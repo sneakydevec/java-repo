@@ -32,6 +32,6 @@ jobs:
       - name: Build and analyze
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  # Needed to get PR information, if any
-          SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
-          SONAR_HOST_URL: ${{ secrets.SONAR_HOST_URL }}
+          SONAR_TOKEN: 851ca9e114232f06d8d357b17f6298d0fb28f75a
+          SONAR_HOST_URL: https://5e31-37-47-96-87.eu.ngrok.io
         run: mvn -B verify org.sonarsource.scanner.maven:sonar-maven-plugin:sonar
