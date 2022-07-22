@@ -1,9 +1,8 @@
-FROM java:8-jdk
+FROM openjdk:8-alpine
 
 VOLUME /var/run/docker.sock
 
-RUN apt-get dist-update
-RUN apt-get install maven -y
+RUN apk add --update maven
 
 RUN mkdir /home/app
 
