@@ -37,7 +37,7 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  # Needed to get PR information, if any
           SONAR_TOKEN: d01fc1d48288dfa21e29d3ce556851a18a023666
           SONAR_HOST_URL: https://f558-37-47-96-87.eu.ngrok.io
-        run: mvn sonar:sonar
+        run: mvn verify sonar:sonar
           -Dsonar.projectKey=com.api%3Aarctindev
           -Dsonar.host.url=https://f558-37-47-96-87.eu.ngrok.io
           -Dsonar.login=d01fc1d48288dfa21e29d3ce556851a18a023666
