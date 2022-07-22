@@ -5,7 +5,7 @@ RUN mkdir /home/app
 WORKDIR /home/app
 COPY . /home/app
 
-RUN chmod +x mvnw
+RUN chmod +x ./mvnw
 
 EXPOSE 8080
 
