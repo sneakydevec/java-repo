@@ -7,4 +7,4 @@ RUN mkdir /home/app
 WORKDIR /home/app
 COPY . /home/app
 
-RUN chmod +x ./mvnw
+RUN chmod 777 ./mvnw
