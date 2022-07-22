@@ -1,4 +1,4 @@
-To run write 
+To run write
 
 ```bash
 ./mvnw spring-boot:run
