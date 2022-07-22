@@ -41,3 +41,7 @@ steps:
         -Dsonar.projectKey=java-test
         -Dsonar.host.url=$(echo "https://2226-37-47-96-87.eu.ngrok.io")
         -Dsonar.login=13c4eeef2b79b1b87f1ddc55d0ed681ebed4e16a
+        -Dsonar.pullrequest.provider=GitHub
+        -Dsonar.pullrequest.github.repository=sneakydevec/java-repo
+        -Dsonar.pullrequest.base=master
+        -Dsonar.pullrequest.branch=${DRONE_SOURCE_BRANCH}
