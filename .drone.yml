@@ -1,0 +1,8 @@
+kind: pipeline
+name: default
+
+steps:
+- name: greetings
+  image: foobar/bazqux
+  commands:
+  - echo bonjour monde
