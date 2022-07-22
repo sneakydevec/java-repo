@@ -31,4 +31,5 @@ steps:
     image: java-app
     pull: never
     commands:
+      - ls -a
       - ./mvnw verify
