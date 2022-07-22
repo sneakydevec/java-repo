@@ -37,4 +37,9 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  # Needed to get PR information, if any
           SONAR_TOKEN: d01fc1d48288dfa21e29d3ce556851a18a023666
           SONAR_HOST_URL: https://f558-37-47-96-87.eu.ngrok.io
-        run: mvn -B verify org.sonarsource.scanner.maven:sonar-maven-plugin:sonar -X
+        run: mvn sonar-scanner
+          -Dsonar.projectKey=${{ github.event.repository.name }}
+          -Dsonar.pullrequest.key=${{ github.event.number }}
+          -Dsonar.pullrequest.branch=${{ github.event.pull_request.head.ref }}
+          -Dsonar.pullrequest.base=develop
+          -Dsonar.scm.revision=${{ github.event.pull_request.head.sha }}
