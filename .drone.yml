@@ -29,5 +29,6 @@ steps:
 
   - name: Verify
     image: java-app
+    pull: never
     commands:
       - mvn verify
