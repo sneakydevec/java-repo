@@ -40,4 +40,4 @@ steps:
       - mvn sonar:sonar
         -Dsonar.projectKey=java-test
         -Dsonar.host.url=$(echo "https://2226-37-47-96-87.eu.ngrok.io")
-        -Dsonar.login=7a05c85696abe77fed0cc7cc318a56b797308e81
+        -Dsonar.login=13c4eeef2b79b1b87f1ddc55d0ed681ebed4e16a
