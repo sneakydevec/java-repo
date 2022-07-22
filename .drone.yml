@@ -1,8 +1,10 @@
 kind: pipeline
+type: docker
 name: default
 
 steps:
-- name: greetings
-  image: foobar/bazqux
+- name: greeting
+  image: alpine
   commands:
-  - echo hello world
+  - echo hello
+  - echo world
