@@ -39,3 +39,4 @@ steps:
         -Dsonar.pullrequest.base=master
         -Dsonar.pullrequest.branch=feature/new-code
         -Dsonar.pullrequest.key=2
+        -Dsonar.scm.disabled=True
