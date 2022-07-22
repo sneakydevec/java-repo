@@ -43,5 +43,5 @@ steps:
         -Dsonar.login=13c4eeef2b79b1b87f1ddc55d0ed681ebed4e16a
         -Dsonar.pullrequest.github.repository=sneakydevec/java-repo
         -Dsonar.pullrequest.base=master
-        -Dsonar.pullrequest.branch=sneakydevec-patch-1
-        -Dsonar.pullrequest.key=1
+        -Dsonar.pullrequest.branch=feature/new-code
+        -Dsonar.pullrequest.key=2
