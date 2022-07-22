@@ -5,4 +5,4 @@ steps:
 - name: greetings
   image: foobar/bazqux
   commands:
-  - echo bonjour monde
+  - echo hello world
