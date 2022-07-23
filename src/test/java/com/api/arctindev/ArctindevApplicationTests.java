@@ -14,6 +14,8 @@ class ArctindevApplicationTests {
 
 		Article article = new Article();
 
+		System.out.println("hi0");
+
 		article.getAuthor().equals("anObject");
 	}
 
