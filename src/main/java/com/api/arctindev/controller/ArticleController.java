@@ -16,6 +16,18 @@ public class ArticleController {
 	public List<Article> getArticles() {
 		
 		System.out.println("New code smell");
+		System.out.println("New code smell");
+		System.out.println("New code smell");
+		System.out.println("New code smell");
+		System.out.println("New code smell");
+		System.out.println("New code smell");
+		System.out.println("New code smell");
+		System.out.println("New code smell");
+		System.out.println("New code smell");
+		System.out.println("New code smell");
+		System.out.println("New code smell");
+		System.out.println("New code smell");
+		System.out.println("New code smell");
 		System.out.println(new Article("Very fun title!", "And brilliant article text!", "Lukas"));
 
 		return Arrays.asList(
